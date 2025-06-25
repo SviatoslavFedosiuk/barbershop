@@ -7,14 +7,25 @@
     &__wrap {
         display: flex;
         justify-content: space-between;
+
+
+        @media screen and (min-width: 1200px) {
+            align-items: center;
+        }
     }
 
+    // background-color: gray;
 
     &__nav {
         display: none;
 
         @media screen and (min-width: 720px) {
             display: block;
+            margin-top: 12px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
         }
     }
 
@@ -27,7 +38,7 @@
         }
     }
 
-    &__item {
+    &__items {
         display: none;
 
         @media screen and (min-width: 720px) {
@@ -43,7 +54,7 @@
         }
     }
 
-    &__point:first-child {
+    &__elem:first-child {
         @media screen and (min-width: 1200px) {
             order: 1;
         }
@@ -65,7 +76,7 @@
         }
     }
 
-    &__url {
+    &__contact {
         color: #FFF;
 
         font-family: "Open Sans";
@@ -77,7 +88,27 @@
         text-transform: uppercase;
     }
 
-    
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (min-width: 720px) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        width: 68.93px;
+        height: 55.46px;
+    }
+
+    &__burger {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+    }
 
 
 }
