@@ -17,20 +17,7 @@
         background-size: 1200px 100%;
     }
 
-    &__aside {
-        display: none;
-
-        @media screen and (min-width: 720px) {
-            display: flex;
-            flex-direction: column;
-            background-color: #FFF;
-            width: 90px;
-            height: 100%;
-            position: absolute;
-            top: 0;
-
-        }
-    }
+   
 
     &__items {
         display: flex;
