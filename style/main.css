@@ -629,4 +629,51 @@ input[type=checkbox] {
     width: 160px;
     height: 40px;
   }
+}
+
+.barbers {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 720px) {
+  .barbers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers {
+    padding-top: 120px;
+    padding-bottom: 103px;
+  }
+}
+.barbers__desc {
+  color: #303030;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.barbers__desc::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #303030;
+  display: block;
+}
+.barbers__title {
+  color: #303030;
+  font-family: "Raleway";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  text-align: start;
 }/*# sourceMappingURL=main.css.map */
