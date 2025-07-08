@@ -1,48 +1,104 @@
-.barbers{
-    padding-top: 84px;
-    padding-bottom: 84px;
-    @media screen and (min-width: 720px) {
-            padding-top: 100px;
-            padding-bottom: 100px;
+.barbers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F7F7F7;
+
+    &__text {
+        color: #303030;
+        font-family: "Open Sans";
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: #303030;
+            flex-shrink: 0;
+            margin-right: 20px;
         }
-    
-        @media screen and (min-width: 1200px) {
-            padding-top: 120px;
-                padding-bottom: 103px;        }
-    
-
-&__desc {
-    color: #303030;
-    font-family: "Open Sans";
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 20px;
-
-    &::before {
-        content: "";
-        width: 60px;
-        height: 1px;
-        background: #303030;
-        display: block;
     }
-}
 
-&__title {
-    color: #303030    ;
-    font-family: "Raleway";
-    font-size: 42px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 2.1px;
-    text-align: start;
+    &__title {
+        color: #303030;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.1px;
+        margin-bottom: 44px;
+    }
 
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
 
-}
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 30px;
+        }
+    }
+
+    &__name {
+        color: #303030;
+
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.36px;
+        margin-bottom: 8px;
+        margin-top: 30px;
+    }
+
+    &__description {
+        color: #FF6C00;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        margin-bottom: 30px;
+    }
+
+    &__soc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__link {
+        background-color: #fff;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        &:hover {
+            .barbers__icon {
+                fill: #FF6C00;
+            }
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: #303030;
+    }
 }
