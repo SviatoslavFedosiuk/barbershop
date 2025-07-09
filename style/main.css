@@ -165,15 +165,17 @@ input[type=checkbox] {
     display: none;
   }
 }
-.header__logo {
+.header__icon {
   width: 68.93px;
   height: 55.46px;
+  fill: #FFF;
 }
 .header__burger {
   width: 40px;
   height: 40px;
   background-color: transparent;
   border: none;
+  fill: #FFF;
 }
 
 .button {
@@ -488,9 +490,9 @@ input[type=checkbox] {
 }
 
 .prices {
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2)) url(/img/mobile/prices-mobile@1x.webp);
+  background-color: rgba(0, 0, 0, 0.825);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2)) url(../img/mobile/prices-mobile@1x.webp);
   background-repeat: no-repeat;
-  background-color: rgb(0, 0, 0);
   background-size: cover;
   padding-top: 84px;
   padding-bottom: 84px;
@@ -674,99 +676,6 @@ input[type=checkbox] {
   }
 }
 
-.barbers {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #F7F7F7;
-}
-.barbers__text {
-  color: #303030;
-  font-family: "Open Sans";
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.barbers__text::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 1px;
-  background: #303030;
-  flex-shrink: 0;
-  margin-right: 20px;
-}
-.barbers__title {
-  color: #303030;
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 2.1px;
-  margin-bottom: 44px;
-}
-.barbers__list {
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-}
-@media screen and (min-width: 1200px) {
-  .barbers__list {
-    flex-direction: row;
-    gap: 30px;
-  }
-}
-.barbers__name {
-  color: #303030;
-  text-align: center;
-  font-family: "Open Sans";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.36px;
-  margin-bottom: 8px;
-  margin-top: 30px;
-}
-.barbers__description {
-  color: #FF6C00;
-  text-align: center;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  margin-bottom: 30px;
-}
-.barbers__soc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.barbers__link {
-  background-color: #fff;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-.barbers__link:hover .barbers__icon {
-  fill: #FF6C00;
-}
-.barbers__icon {
-  width: 20px;
-  height: 20px;
-  fill: #303030;
-}
-
 .old {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -900,4 +809,157 @@ input[type=checkbox] {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.barbers {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #F7F7F7;
+}
+.barbers__text {
+  color: #303030;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.barbers__text::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #303030;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+.barbers__title {
+  color: #303030;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  margin-bottom: 44px;
+}
+.barbers__list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+@media screen and (min-width: 1200px) {
+  .barbers__list {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.barbers__name {
+  color: #303030;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
+.barbers__description {
+  color: #FF6C00;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  margin-bottom: 30px;
+}
+.barbers__soc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.barbers__link {
+  background-color: #fff;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.barbers__link:hover .barbers__icon {
+  fill: #FF6C00;
+}
+.barbers__icon {
+  width: 20px;
+  height: 20px;
+  fill: #303030;
+}
+
+.latin {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.latin__pretext {
+  color: #303030;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.latin__pretext::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #303030;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+.latin__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 720px) {
+  .latin__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .latin__list {
+    flex-direction: row;
+  }
+}
+.latin__img {
+  width: 418px;
+  height: 360px;
+}
+@media screen and (min-width: 720px) {
+  .latin__img {
+    width: 330px;
+    height: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .latin__img {
+    width: 270px;
+    height: 360px;
+  }
 }/*# sourceMappingURL=main.css.map */

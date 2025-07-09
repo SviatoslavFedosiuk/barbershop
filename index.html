@@ -22,121 +22,192 @@
   <body>
     <header class="header">
       <div class="container">
-       <div class="header__wrap">
-       <nav class="header__nav">
-       <ul class="header__list">
-           <li class="header__item"><a href="#" class="header__link">About</a></li>
-           <li class="header__item"><a href="#" class="header__link">Services and prices</a></li>
-           <li class="header__item"><a href="#" class="header__link">Barberss</a></li>
-           <li class="header__item"><a href="#" class="header__link">Contacts</a></li>
-      </ul>
-      </nav>
-       <ul class="header__items">
-           
-            <li class="header__elem"><a href="#" class="header__contact button">Online-booking</a></li>
-       <li class="header__elem"><a href="tel:+380441111111" class="header__contact">+38 044 111 11 11</a></li>
-      
-       </ul>
-       </div>
-       <div class="header__box">
-       <a class="header__logo" href="./index.html">
-<img class="header__logo" src="./images/logo.png" alt="">
-       </a>
-       <button type="button" class="header__burger">
-           <img class="header__menu" src="./images/menu.png" alt="">
-       </button>
-       </div>
+        <div class="header__wrap">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">About</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Services and prices</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Barberss</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__items">
+            <li class="header__elem">
+              <a href="#" class="header__contact button">Online-booking</a>
+            </li>
+            <li class="header__elem">
+              <a href="tel:+380441111111" class="header__contact"
+                >+38 044 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header__box">
+          <a class="header__logo" href="./index.html">
+            <svg class="header__icon">
+                <use href="./img/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button type="button" class="header__burger">
+            <svg class="header__burger">
+                <use href="./img/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-   </header>
+    </header>
     <main class="main">
       <section class="hero">
         <div class="container">
-            
-            <div class="hero__box">
-                <div>
-            <p class="hero__text">A hair salon for men in Kyiv</p>
-            <h1 class="hero__title">BarberShop</h1>
-            <p class="hero__explanation">We are experts in trendy men’s haircuts.
-                We work quickly, carefully and with style.</p>
+          <div class="hero__box">
+            <div>
+              <p class="hero__text">A hair salon for men in Kyiv</p>
+              <h1 class="hero__title">BarberShop</h1>
+              <p class="hero__explanation">
+                We are experts in trendy men’s haircuts. We work quickly,
+                carefully and with style.
+              </p>
             </div>
-                <button class="hero__btn" type="button"><img class="hero__menu" src="./images/menu-lines.png" alt=""></button>
-            </div>
-                <ul class="hero__list">
-                    <li class="hero__item"><a href="" class="hero__link">Back</a></li>
-                    <li class="hero__item"><a href="" class="hero__link">Forward</a></li>
-                </ul>
+            <button class="hero__btn" type="button">
+              <img class="hero__menu" src="./images/menu-lines.png" alt="" />
+            </button>
+          </div>
+          <ul class="hero__list">
+            <li class="hero__item"><a href="" class="hero__link">Back</a></li>
+            <li class="hero__item">
+              <a href="" class="hero__link">Forward</a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="about">
         <div class="container">
-            <ul class="about__list">
-                <li class="about__item"><img src="" alt="photo" class="about__img"></li>
-                <li class="about__item"><img src="" alt="photo" class="about__img"></li>
-            </ul>
-            <div class="about__box">
-        <p class="about__text">About</p>
-        <h2 class="about__title">Best Barbershop in your city</h2>
-        <p class="about__desk">If you want to add more confidence to your image, you should visit us</p>
-        <p class="about__deskription">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
-        <button type="button" class="about__btn">online-booking</button>
-    </div>
-    </div>
-     </section>
-     <section class="prices">
-      <div class="container">
+          <ul class="about__list">
+            <li class="about__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/start-desktop@1x.webp 1x,
+                    ./img/desktop/start-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/start-tablet@1x.webp 1x,
+                    ./img/tablet/start-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 720px)"
+                />
+                <img src="" alt="photo" class="about__img" />
+              </picture>
+            </li>
+
+            <li class="about__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/beardcut-desktop@1x.webp 1x,
+                    ./img/desktop/beardcut-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/beardcurt-tablet@1x.webp 1x,
+                    ./img/tablet/beardcurt-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 720px)"
+                />
+                <img src="" alt="photo" class="about__img" />
+              </picture>
+            </li>
+          </ul>
+          <div class="about__box">
+            <p class="about__text">About</p>
+            <h2 class="about__title">Best Barbershop in your city</h2>
+            <p class="about__desk">
+              If you want to add more confidence to your image, you should visit
+              us
+            </p>
+            <p class="about__deskription">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="about__btn">online-booking</button>
+          </div>
+        </div>
+      </section>
+      <section class="prices">
+        <div class="container">
           <p class="prices__desc">Spend your time with the best masters</p>
-      <h2 class="prices__title">Services and prices</h2>
-      <ul class="prices__list">
-          <li class="prices__item">
+          <h2 class="prices__title">Services and prices</h2>
+          <ul class="prices__list">
+            <li class="prices__item">
               <ul class="prices__elements">
-                  <li class="prices__elem">
-                      <h3 class="prices__heading">Men’s haircut</h3>
-                      <p class="prices__text">from 300 uah.</p>
-                  </li>
-                  <li class="prices__elem">
-                      <h3 class="prices__heading">Beard trim</h3>
-                      <p class="prices__text">from 300 uah.</p>
-                  </li>
-                  <li class="prices__elem">
-                      <h3 class="prices__heading">Mustache trim</h3>
-                      <p class="prices__text">from 200 uah.</p>
-                  </li>
-                  <li class="prices__elem">
-                      <h3 class="prices__heading">Straight razor shave</h3>
-                      <p class="prices__text">from 200 uah.</p>
-                  </li>
+                <li class="prices__elem">
+                  <h3 class="prices__heading">Men’s haircut</h3>
+                  <p class="prices__text">from 300 uah.</p>
+                </li>
+                <li class="prices__elem">
+                  <h3 class="prices__heading">Beard trim</h3>
+                  <p class="prices__text">from 300 uah.</p>
+                </li>
+                <li class="prices__elem">
+                  <h3 class="prices__heading">Mustache trim</h3>
+                  <p class="prices__text">from 200 uah.</p>
+                </li>
+                <li class="prices__elem">
+                  <h3 class="prices__heading">Straight razor shave</h3>
+                  <p class="prices__text">from 200 uah.</p>
+                </li>
               </ul>
-          </li>
-          <li class="prices__item">
+            </li>
+            <li class="prices__item">
               <ul class="prices__elements">
-                  <li class="prices__elem">
-                      <h3 class="prices__heading">Trainee’s haircut</h3>
-                      <p class="prices__text">from 50 uah.</p>
-                  </li>
-                  <li class="prices__elem">
-                      <h3 class="prices__heading">Haircut under the nozzle</h3>
-                      <p class="prices__text">from 200 uah.</p>
-                  </li>
-                  <li class="prices__elem">
-                      <h3 class="prices__heading">Children’s haircut (0-12 y.o.)</h3>
-                      <p class="prices__text">from 300 uah.</p>
-                  </li>
-                  <li class="prices__elem">
-                      <h3 class="prices__heading">Camouflage of gray hair</h3>
-                      <p class="prices__text">from 200 uah.</p>
-                  </li>
+                <li class="prices__elem">
+                  <h3 class="prices__heading">Trainee’s haircut</h3>
+                  <p class="prices__text">from 50 uah.</p>
+                </li>
+                <li class="prices__elem">
+                  <h3 class="prices__heading">Haircut under the nozzle</h3>
+                  <p class="prices__text">from 200 uah.</p>
+                </li>
+                <li class="prices__elem">
+                  <h3 class="prices__heading">
+                    Children’s haircut (0-12 y.o.)
+                  </h3>
+                  <p class="prices__text">from 300 uah.</p>
+                </li>
+                <li class="prices__elem">
+                  <h3 class="prices__heading">Camouflage of gray hair</h3>
+                  <p class="prices__text">from 200 uah.</p>
+                </li>
               </ul>
-          </li>
-          
-      </ul>
-      <button class="prices__btn" type="button">online-booking</button>
-      </div>
-   </section>
+            </li>
+          </ul>
+          <button class="prices__btn" type="button">online-booking</button>
+        </div>
+      </section>
       <section class="old">
         <div class="container">
           <p class="old__text">Old traditional school</p>
           <h2 class="old__title">¿Why people come to us?</h2>
-          <p class="old__texts">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
+          <p class="old__texts">
+            Only good things are said about us. But it's better to see and feel
+            1 time than read 10 times.
+          </p>
           <ul class="old__list">
             <li class="old__item">
               <div class="old__box">
@@ -171,138 +242,306 @@
       </section>
       <section class="barbers">
         <div class="container">
-            <p class="barbers__text">For true enjoyers of the atmosphere</p>
-            <h1 class="barbers__title">Our barbers</h1>
-            <ul class="barbers__list">
-                <li class="barbers__item">
-                    <img src="./img/john.jpg" alt="John" class="barbers__img">
-                    <div class="barbers__box">
-                        <h2 class="barbers__name">John Smith</h2>
-                        <p class="barbers__description">Extreme Barber</p>
-                        <ul class="barbers__soc">
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-insta"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-in"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="barbers__item">
-                    <img src="./img/michele.jpg" alt="Michele" class="barbers__img">
-                    <div class="barbers__box">
-                        <h2 class="barbers__name">Michele Doe</h2>
-                        <p class="barbers__description">Extreme Barber</p>
-                        <ul class="barbers__soc">
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-insta"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-in"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="barbers__item">
-                    <img src="./img/alan.jpg" alt="Alan" class="barbers__img">
-                    <div class="barbers__box">
-                        <h2 class="barbers__name">Alan Black</h2>
-                        <p class="barbers__description">Extreme Barber</p>
-                        <ul class="barbers__soc">
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-insta"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="barbers__point">
-                                <a href="" class="barbers__link">
-                                    <svg class="barbers__icon">
-                                        <use href="./img/symbol-defs.svg#icon-in"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+          <p class="barbers__text">For true enjoyers of the atmosphere</p>
+          <h1 class="barbers__title">Our barbers</h1>
+          <ul class="barbers__list">
+            <li class="barbers__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/john-desktop@1x.webp 1x,
+                    ./img/desktop/john-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/john-tablet@1x.webp 1x,
+                    ./img/tablet/john-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 720px)"
+                />
+                <source
+                  srcset="
+                    ./img/mobile/john-mobile@1x.webp 1x,
+                    ./img/mobile/john-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./img/john.jpg" alt="John" class="barbers__img" />
+              </picture>
+              <div class="barbers__box">
+                <h2 class="barbers__name">John Smith</h2>
+                <p class="barbers__description">Extreme Barber</p>
+                <ul class="barbers__soc">
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-insta"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="barbers__item">
+                <picture>
+                    <source
+                      srcset="
+                        ./img/desktop/michele-desktop@1x.webp 1x,
+                        ./img/desktop/michele-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/michele-tablet@1x.webp 1x,
+                        ./img/tablet/michele-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 720px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/michele-mobile@1x.webp 1x,
+                        ./img/mobile/michele-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+    
+                    <img src="./img/michele.jpg" alt="Michele" class="barbers__img" />
+                </picture>
+              <div class="barbers__box">
+                <h2 class="barbers__name">Michele Doe</h2>
+                <p class="barbers__description">Extreme Barber</p>
+                <ul class="barbers__soc">
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-insta"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="barbers__item">
+                <picture>
+                    <source
+                      srcset="
+                        ./img/desktop/alan-desktop@1x.webp 1x,
+                        ./img/desktop/alan-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/alan-tablet@1x.webp 1x,
+                        ./img/tablet/alan-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 720px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/alan-mobile@1x.webp 1x,
+                        ./img/mobile/alan-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+    
+                    <img src="./img/alan.jpg" alt="Alan" class="barbers__img" />
+                </picture>
+              <div class="barbers__box">
+                <h2 class="barbers__name">Alan Black</h2>
+                <p class="barbers__description">Extreme Barber</p>
+                <ul class="barbers__soc">
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-insta"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="barbers__point">
+                    <a href="" class="barbers__link">
+                      <svg class="barbers__icon">
+                        <use href="./img/symbol-defs.svg#icon-in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
-     </section>
-      <section class="photos">
+      </section>
+      <section class="latin">
         <div class="container">
-          <p class="photos__pretext">In Latin, "barba" means "beard"</p>
-          <ul class="photos__list">
-            <li class="photos__item">
-              <img src="" alt="" class="photos__img" />
+          <p class="latin__pretext">In Latin, "barba" means "beard"</p>
+          <ul class="latin__list">
+            <li class="latin__item">
+                <picture>
+                    <source
+                      srcset="
+                        ./img/desktop/trimer-desktop@1x.webp 1x,
+                        ./img/desktop/trimer-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/trimer-tablet@1x.webp 1x,
+                        ./img/tablet/trimer-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 720px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/trimer-mobile@1x.webp 1x,
+                        ./img/mobile/trimer-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+    
+                    <img src="" alt="" class="latin__img" />
+                </picture>
             </li>
-            <li class="photos__item">
-              <img src="" alt="" class="photos__img" />
+            <li class="latin__item">
+                <picture>
+                    <source
+                      srcset="
+                        ./img/desktop/beard-desktop@1x.webp 1x,
+                        ./img/desktop/beard-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/beard-tablet@1x.webp 1x,
+                        ./img/tablet/beard-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 720px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/beard-mobile@1x.webp 1x,
+                        ./img/mobile/beard-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+    
+                    <img src="" alt="" class="latin__img" />
+                </picture>
             </li>
-            <li class="photos__item">
-              <img src="" alt="" class="photos__img" />
+            <li class="latin__item">
+                <picture>
+                    <source
+                      srcset="
+                        ./img/desktop/eyestowel-desktop@1x.webp 1x,
+                        ./img/desktop/eyestowel-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/eyestowel-tablet@1x.webp 1x,
+                        ./img/tablet/eyestowel-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 720px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/eyestowel-mobile@1x.webp 1x,
+                        ./img/mobile/eyestowel-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+    
+                    <img src="" alt="" class="latin__img" />
+                </picture>
             </li>
-            <li class="photos__item">
-              <img src="" alt="" class="photos__img" />
+            <li class="latin__item">
+                <picture>
+                    <source
+                      srcset="
+                        ./img/desktop/cut-desktop@1x.webp 1x,
+                        ./img/desktop/cut-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet/cut-tablet@1x.webp 1x,
+                        ./img/tablet/cut-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 720px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mobile/cut-mobile@1x.webp 1x,
+                        ./img/mobile/cut-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+    
+                    <img src="" alt="" class="latin__img" />
+                </picture>
             </li>
           </ul>
         </div>
